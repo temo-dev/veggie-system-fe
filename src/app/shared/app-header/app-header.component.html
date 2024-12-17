@@ -1,0 +1,7 @@
+<p-dock [model]="items" [position]="'bottom'">
+    <ng-template #item let-item>
+        <a routerLink={{item.routerLink}}>
+            <p-button icon={{item.icon}} pTooltip={{item.label}} tooltipPosition="top" iconPos="top" [raised]="true"/>
+        </a>
+    </ng-template>
+</p-dock>
