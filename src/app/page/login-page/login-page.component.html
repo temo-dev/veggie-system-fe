@@ -1,0 +1,21 @@
+<div class="container">
+    <p-card styleClass="veggie-card">
+        <ng-template #header>
+                <h2>Welcome to Veggie s.r.o</h2>
+        </ng-template>
+        <ng-template #content>
+                <p-floatlabel>
+                    <input pInputText id="over_label" [(ngModel)]="user_name" autocomplete="off"/>
+                    <label for="over_label">Name Account</label>
+                </p-floatlabel>
+                <p-floatlabel>
+                    <input pInputText id="over_label" [(ngModel)]="password" autocomplete="off"/>
+                    <label for="over_label">Password</label>
+                </p-floatlabel>
+        </ng-template>
+        <ng-template #footer>
+            <p-button icon="pi pi-pencil" pTooltip="create new account" tooltipPosition="bottom" iconPos="right" [raised]="true" severity="contrast" label="Create"/>
+            <p-button icon="pi pi-times" pTooltip="cancel" tooltipPosition="bottom" iconPos="right" [raised]="true" severity="contrast" label="Cancel"/>
+        </ng-template>
+    </p-card>
+</div>

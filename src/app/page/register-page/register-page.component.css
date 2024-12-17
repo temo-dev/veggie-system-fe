@@ -1,0 +1,29 @@
+.container{
+    margin: auto;
+    width: 300px;
+}
+.veggie-card.p-card {
+    border-radius: 1rem;
+    overflow: hidden;
+    background: #fffdfd;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.veggie-card .p-card-header {
+    padding: 5px 15px;
+}
+
+.veggie-card .p-card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.veggie-card .p-card-footer{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+}

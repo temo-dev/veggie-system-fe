@@ -12,5 +12,13 @@ export const routes: Routes = [
     {
         path:'supplier',
         loadComponent:()=> import('./shared/app-supplier/app-supplier.component').then(c => c.AppSupplierComponent)
+    },
+    {
+        path:'register',
+        loadComponent:()=> import('./page/register-page/register-page.component').then(c => c.RegisterPageComponent)
+    },
+    {
+        path:'login',
+        loadComponent:()=>import('./page/login-page/login-page.component').then(c => c.LoginPageComponent)
     }
 ];
